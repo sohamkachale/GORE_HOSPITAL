@@ -7356,7 +7356,7 @@ a:focus,
 a:active {
     text-decoration: none;
     outline: none;
-    color: var(--color-primary);
+    color: #fff;
 }
 
 a:focus {
@@ -21308,4 +21308,14 @@ h1, h2, h3, h4, h5, h6,
 .pre-title {
     font-family: "Fredoka", sans-serif;
     font-weight: 500;
+}
+.any {
+  margin-top: 60px; /* Default margin for screen size 470px and above */
+}
+
+@media screen and (max-width: 470px) {
+  .any {
+    margin-top: 200px; /* Margin for screen size below 470px */
+  }
+  
 }
