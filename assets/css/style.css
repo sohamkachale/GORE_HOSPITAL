@@ -706,7 +706,7 @@ ol ul {
 }
 
 .rts-section-gapBottom {
-    padding-bottom: 120px;
+    padding-bottom: 55px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -16943,6 +16943,7 @@ a,p{
 .request-appoinemnt-area-main-wrapper {
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 55px;
 }
 
 .request-appoinemnt-area-main-wrapper .pre {
@@ -21322,4 +21323,46 @@ h1, h2, h3, h4, h5, h6,
     margin-top: 200px; /* Margin for screen size below 470px */
   }
   
+}
+
+
+/* Style for the Swiper navigation buttons */
+.swiper-button-next, .swiper-button-prev {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(8px);  /* Apply blur effect to the background */
+    border-radius: 50%;  /* Make the buttons rounded */
+    width: 40px;  /* Set width */
+    height: 40px;  /* Set height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Optional: add a shadow for depth */
+    position: absolute;  /* Ensure they are positioned correctly */
+    top: 50%;
+    transform: translateY(-50%);  /* Center vertically */
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Position the next button to the right */
+.swiper-button-next {
+    right: 10px;  /* Distance from the right edge */
+}
+
+/* Position the prev button to the left */
+.swiper-button-prev {
+    left: 10px;  /* Distance from the left edge */
+}
+
+/* Reduce the size of the arrow icon inside the button */
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 18px;  /* Decrease the size of the arrow icon */
+    color: #000;  /* Ensure the arrow icon color is visible */
+}
+
+/* Hover effect to change the background and add scale effect */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Darker background on hover */
+    transform: scale(1.1);  /* Slightly enlarge the button */
 }
